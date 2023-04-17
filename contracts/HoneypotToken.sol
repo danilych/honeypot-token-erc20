@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.18;
+pragma solidity ^0.8.9;
 
 /**
  * @dev Provides information about the current execution context, including the
@@ -610,13 +610,8 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 
 // File: contracts/HoneypotToken.sol
 
-
-pragma solidity ^0.8.18;
-
-
-
 contract HoneypotToken is ERC20, Ownable {
-    constructor() ERC20("MyToken", "MTK") {
+    constructor() ERC20("Honeypot", "HNT") {
         _mint(msg.sender, 10000 * 10 ** decimals());
     }
 }
